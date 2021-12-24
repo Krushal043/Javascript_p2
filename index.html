@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+        
+        <div class="btns">
+
+            <div class="row" style="justify-content:left; align-items:left" >
+                <div class="dreg">
+                    <div class="row">
+                    <div class="dropdowndemo">
+                        <button class="dropdownbtn">Trigono</button>
+                        <div class="dropdownlist-content">
+                        <a href="#"id="sin" onclick="sin()">sin</a>
+                        <a href="#" id="cos" onclick="cos()">cos</a>
+                        <a href="#" id="tan" onclick="tan()">tan</a>
+                        <a href="#" onclick="csc()">csc</a>
+                        <a href="#" onclick="sec()">sec</a>
+                        <a href="#" onclick="cot()">cot</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="dropdowndemo">
+                        <button class="dropdownbtn">Functions</button>
+                        <div class="dropdownlist-content">
+                        <a href="#" onclick="abs()">abs</a>
+                        <a href="#" onclick="rand()">rand</a>
+                        <a href="#" onclick="cube()">cube</a>
+                        <a href="#" onclick="round()">round</a>
+                        <a href="#" onclick="ceil()">ceil</a>
+                        <a href="#" onclick="floor()">floor</a>
+                        <a href="#" onclick="fact()">fact</a>
+                        </div>
+                    </div>         
+                </div>
+                <div class="dropdowndemo">
+                    <button class="dropdownbtn" id="shiftBtn" onclick="funcshift(1)">2 <span style="position: relative; bottom: .4em; right: .1em;">nd</span></button>
+                    <div class="dropdownlist-content">
+                    <a href="#" onclick="sin1()">sin<sup>-1</sup></a>
+                    <a href="#" onclick="cos1()">cos<sup>-1</sup></a>
+                    <a href="#" onclick="tan1()">tan<sup>-1</sup></a>
+                    <a href="#" onclick="log2()">log2</a> 
+                    </div>
+                </div> 
+            </div>
+            </div>
+
+            <div class="row">  
+                <button onclick="tanh(screen.value)">tanh</button>    
+                <button onclick="memory('mc')">MC</button>
+                <button onclick="memory('mr')">MR</button>
+                <button onclick="memory('ms')">MS</button>
+                <button onclick="memory('m+')">M+</button>
+                <button onclick="memory('m-')">M-</button>
+            </div>
+
+          
+    <div class="row">
+        <button onclick="deg(screen.value)">DEG</button>
+        <button onclick="fe(screen.value)">F-E</button>
+        <button onclick="pow()">x <span style="position: relative; bottom: .3em; right: .1em;">2</span></button>
+        <button onclick="x()">10 <span style="position: relative; bottom: .3em; right: .1em;">x</span></button>
+        <button onclick="abs1()">|x|</button>
+        <button onclick="screen.value=eval(1/screen.value)">1/x</button>
+        </div>
+            <div class="row">
+                <button class="btn">%</button>
+                <button onclick="fact()">n!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button id="ce" onclick="backspace()">CE</button>
+                <button id="ac" onclick="screen.value=''">AC</button>
+            </div>
+
+            <div class="row">
+                <button id="exp"onclick="exp()">exp</button>
+                <button onclick="pi()">π</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">/</button>
+            </div>
+
+            <div class="row">
+                <button onclick="in1()">in</button>
+                <button onclick="log()">log</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">*</button>
+            </div>
+
+            <div class="row">
+                <button onclick="tan()">√</button>
+                <button onclick="signChange()" >+/-</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="e()">e</button>
+                <button onclick="pow()">x<sup>y</sup></button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn">+</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="clacu.js"></script>
+
+</html>
